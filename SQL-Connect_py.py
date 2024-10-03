@@ -9,7 +9,7 @@ def insert():
         msg.showinfo("INSERT STATUS","ALL FIELDS ARE REQUIRED!!!")
     else:
         try:
-            mydb=mysql.connector.connect(host="localhost",user='root',passwd='achukichu',database='hello')
+            mydb=mysql.connector.connect(host="localhost",user='root',passwd='root',database='hello')
             cursor=mydb.cursor()
             cursor.execute("insert into product values({},'{}','{}')".format(id,name,product))
             msg.showinfo("INSERT STATUS","SUCCESSFULL!!!")
